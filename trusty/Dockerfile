@@ -2,7 +2,9 @@ FROM ubuntu:trusty
 
 MAINTAINER Adi Linden <adi@adis.ca>
 
-ENV GOLANG_VERSION 1.11.2
+# Default golang version
+ARG golang_ver=1.11.2
+ENV GOLANG_VERSION ${golang_ver}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
@@ -40,9 +42,3 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH
 
 CMD ["/bin/bash", "-l"]
-
-#
-# docker build -t adilinden/docker-golang .
-#
-# docker run --rm -it adilinden/docker-golang
-#

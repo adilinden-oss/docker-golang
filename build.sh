@@ -2,7 +2,12 @@
 
 # Script to build all images and push to Docker hub
 
-docker_user=adilinden
+docker_user=""
+
+if [ "x$1" == "x" ]; then
+    echo "usage: $0 <username>"
+    exit 1
+fi
 
 # Lists of golang versions and OS releases names
 #
@@ -10,29 +15,35 @@ docker_user=adilinden
 # - the last golang os also the os only tag
 # - the last golang and os combo bcomes latest
 golang_list="1.9.7 1.10.5 1.11.1 1.11.2"
-os_list="stretch trusty"
+os_list="buster trusty"
 
 # Iterate over lists
 cwd="$PWD"
 for os_ver in $os_list; do
     for golang_ver in $golang_list; do
 
+        echo "--- Trying to build \"${golang_ver}-${os_ver}\""
+
         # Get major version
         golang_major=${golang_ver%.*}
 
-        # Path to Dockerfile
-        docker_path="$golang_major/$os_ver"
-
-        # Tag
-        docker_tag="${docker_user}/golang:${golang_ver}-${os_ver}"
-
-        echo "--- Trying build at $docker_path"
-
-        # Make sure there's a Dockerfile there
-        if [ ! -f "$docker_path/Dockerfile" ]; then
+        # We could have two different paths
+        #
+        # o ${golang_major}-${os_ver} if a specific Dockerfile is needed
+        # o ${os_ver} if a generic Dockerfile for OS suffices
+        if [ -f "${golang_major}/${os_ver}/Dockerfile" ]; then
+            docker_path="${golang_major}/${os_ver}"
+            echo "using \"${golang_major}/${os_ver}/Dockerfile\""
+        elif [ -f "${os_ver}/Dockerfile" ]; then
+            docker_path="${os_ver}"
+            echo "using \"${os_ver}/Dockerfile\""
+        else
             echo "No Dockerfile found"
             continue
         fi
+
+        # Tag
+        docker_tag="${docker_user}/golang:${golang_ver}-${os_ver}"
 
         # Build the container
         docker build --build-arg golang_ver=$golang_ver -t "$docker_tag" "$docker_path"
