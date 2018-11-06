@@ -3,6 +3,7 @@ FROM ubuntu:trusty
 MAINTAINER Adi Linden <adi@adis.ca>
 
 # Default golang version
+# Use `--build-arg golang_ver=1.9.5` with `docker build`
 ARG golang_ver=1.11.2
 ENV GOLANG_VERSION ${golang_ver}
 
