@@ -4,8 +4,14 @@ Docker containers for [The Go Programming Language]
 
 ## Tags
 
+### Ubuntu
+
 - `latest` [master/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/master/trusty/Dockerfile)
-- `1.9.5-trusty`, [v1.9.5-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.5-trusty/trusty/Dockerfile)
+- `1.9.5-trusty`, `trusty` [v1.9.5-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.5-trusty/trusty/Dockerfile)
+
+### Debian
+
+- `1.9.5-buster`, `buster` [v1.9.5-buster/buster/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.5-buster/buster/Dockerfile)
 
 ### Docker Hub 'Build Settings'
 
