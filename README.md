@@ -2,6 +2,18 @@
 
 Docker containers for [The Go Programming Language]
 
+## Tags
+
+### Docker Hub 'Build Settings'
+
+| Type   | Name                    | Dockerfile Location | Docker Tag Name  |
+|--------|-------------------------|---------------------|------------------|
+| Branch | master                  | /trusty/            | latest           |
+| Tag    | /^v[0-9.]+-trusty$/     | /trusty/            | trusty           |
+| Tag    | /^v([0-9.]+-trusty)$/   | /trusty/            | {\1}             |
+| Tag    | /^v[0-9.]+-buster$/     | /buster/            | buster           |
+| Tag    | /^v([0-9.]+-buster)$/   | /buster/            | {\1}             |
+
 ## Why?
 
 The [Docker Official golang] is currently based on [Debian] [stretch] and [Alpine] Linux. This presents an issue when trying to identify an issue that seems to be unique to building a [golang] app on [Travic CI] as [Travis CI] uses a [Ubuntu] [trusty] base.
