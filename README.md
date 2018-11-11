@@ -4,6 +4,9 @@ Docker containers for [The Go Programming Language]
 
 ## Tags
 
+- `latest` [master/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/master/trusty/Dockerfile)
+- `1.9.5-trusty`, [v1.9.5-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.5-trusty/trusty/Dockerfile)
+
 ### Docker Hub 'Build Settings'
 
 | Type   | Name                    | Dockerfile Location | Docker Tag Name  |
