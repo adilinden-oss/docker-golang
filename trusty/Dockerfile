@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 
 MAINTAINER Adi Linden <adi@adis.ca>
 
-ARG golang_ver=1.9.5
+ARG golang_ver=1.9.7
 ENV GOLANG_VERSION ${golang_ver}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
