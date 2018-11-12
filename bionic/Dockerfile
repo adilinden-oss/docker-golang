@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 MAINTAINER Adi Linden <adi@adis.ca>
 
-ARG golang_ver=1.9.7
+ARG golang_ver=1.10.5
 ENV GOLANG_VERSION ${golang_ver}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
