@@ -2,7 +2,7 @@ FROM debian:buster-slim
 
 MAINTAINER Adi Linden <adi@adis.ca>
 
-ARG golang_ver=1.10.5
+ARG golang_ver=1.11.1
 ENV GOLANG_VERSION ${golang_ver}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
