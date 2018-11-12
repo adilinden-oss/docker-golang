@@ -6,7 +6,7 @@ Docker containers for [The Go Programming Language]
 
 ### Ubuntu
 
-- `latest` [master/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/master/trusty/Dockerfile)
+- `latest` [master/bionic/Dockerfile](https://github.com/adilinden/docker-golang/blob/master/bionic/Dockerfile)
 - `1.11.2-bionic`, `bionic` [v1.11.2-bionic/bionic/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.2-bionic/bionic/Dockerfile)
 - `1.11.2-trusty`, `trusty` [v1.11.2-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.2-trusty/trusty/Dockerfile)
 - `1.11.1-trusty` [v1.11.1-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.1-trusty/trusty/Dockerfile)
@@ -28,7 +28,7 @@ Docker containers for [The Go Programming Language]
 
 | Type   | Name                    | Dockerfile Location | Docker Tag Name  |
 |--------|-------------------------|---------------------|------------------|
-| Branch | master                  | /trusty/            | latest           |
+| Branch | master                  | /bionic/            | latest           |
 | Tag    | /^v[0-9.]+-trusty$/     | /trusty/            | trusty           |
 | Tag    | /^v([0-9.]+-trusty)$/   | /trusty/            | {\1}             |
 | Tag    | /^v[0-9.]+-buster$/     | /buster/            | buster           |
