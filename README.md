@@ -14,7 +14,8 @@ Docker containers for [The Go Programming Language]
 
 ### Debian
 
-- `1.11.1-buster`, `buster` [v1.11.1-buster/buster/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.1-buster/buster/Dockerfile)
+- `1.11.2-buster`, `buster` [v1.11.2-buster/buster/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.2-buster/buster/Dockerfile)
+- `1.11.1-buster` [v1.11.1-buster/buster/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.1-buster/buster/Dockerfile)
 - `1.10.5-buster` [v1.10.5-buster/buster/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.10.5-buster/buster/Dockerfile)
 - `1.9.7-buster` [v1.9.7-buster/buster/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.7-buster/buster/Dockerfile)
 - `1.9.5-buster` [v1.9.5-buster/buster/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.5-buster/buster/Dockerfile)
