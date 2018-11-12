@@ -70,15 +70,22 @@ Compile an app using the containers `go` environment.
 
 ### Compile an app inside container
 
+Compile an app inside the containers `go` environment.
+
+    docker run --rm -it --name go-build-app adilinden/golang:latest
+        go get -v github.com/golang/example/hello
+        ./bin/hello
+
+## Trying to recreate the Travis CI environment
+
 This is what I created it for.
 
-    docker run --rm -it --name go-debug-app adilinden/golang:trusty /bin/bash
-
-    go get -v github.com/adilinden/oauth2_proxy \
-        && cd $GOPATH/src/github.com/adilinden/oauth2_proxy \
-        && go get -t -v ./... \
-        && ./test.sh
-
+    docker run --rm -it --name lab_oauth2_proxy adilinden/golang:trusty
+        apt update && apt install -y gcc \
+        && go get -v github.com/adilinden/oauth2_proxy \
+            && cd $GOPATH/src/github.com/adilinden/oauth2_proxy \
+            && go get -t -v ./... \
+            && ./test.sh
 
 [The Go Programming Language]: https://golang.org/
 [Docker Official golang]: https://hub.docker.com/_/golang/
