@@ -7,6 +7,7 @@ Docker containers for [The Go Programming Language]
 ### Ubuntu
 
 - `latest` [master/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/master/trusty/Dockerfile)
+- `1.11.2-bionic`, `bionic` [v1.11.2-bionic/bionic/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.2-bionic/bionic/Dockerfile)
 - `1.11.2-trusty`, `trusty` [v1.11.2-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.2-trusty/trusty/Dockerfile)
 - `1.11.1-trusty` [v1.11.1-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.1-trusty/trusty/Dockerfile)
 - `1.10.5-bionic` [v1.10.5-bionic/bionic/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.10.5-bionic/bionic/Dockerfile)
