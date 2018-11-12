@@ -10,6 +10,7 @@ Docker containers for [The Go Programming Language]
 - `1.11.2-trusty`, `trusty` [v1.11.2-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.2-trusty/trusty/Dockerfile)
 - `1.11.1-trusty` [v1.11.1-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.11.1-trusty/trusty/Dockerfile)
 - `1.10.5-trusty`, [v1.10.5-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.10.5-trusty/trusty/Dockerfile)
+- `1.9.7-bionic` [v1.9.7-bionic/bionic/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.7-bionic/bionic/Dockerfile)
 - `1.9.7-trusty` [v1.9.7-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.7-trusty/trusty/Dockerfile)
 - `1.9.5-trusty` [v1.9.5-trusty/trusty/Dockerfile](https://github.com/adilinden/docker-golang/blob/v1.9.5-trusty/trusty/Dockerfile)
 
@@ -30,6 +31,8 @@ Docker containers for [The Go Programming Language]
 | Tag    | /^v([0-9.]+-trusty)$/   | /trusty/            | {\1}             |
 | Tag    | /^v[0-9.]+-buster$/     | /buster/            | buster           |
 | Tag    | /^v([0-9.]+-buster)$/   | /buster/            | {\1}             |
+| Tag    | /^v[0-9.]+-bionic$/     | /bionic/            | bionic           |
+| Tag    | /^v([0-9.]+-bionic)$/   | /bionic/            | {\1}             |
 
 ## Why?
 
